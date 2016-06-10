@@ -7,7 +7,7 @@ module Db
     end
 
     def create(snapshot_name = '')
-      puts "Hey World!: #{dump}"
+      dump
     end
 
     def travel_to(specific_date_time = '')
