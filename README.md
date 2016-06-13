@@ -22,7 +22,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You have 3 useful methods with `Db::Snapshot`
+
+- `list`
+- `create`
+- `travel_to`
+
+### list
+
+Provides a list of the folders inside the dump/ folder.
+
+### create
+
+Creates a snapshot of the existing database:
+
+```ruby
+# Optional, you can send your own name for this snapshot.
+Db::Snapshot.create()
+```
+
+### travel_to
+
+Like a time machine, you can travel to the past with this method, this is how to use it:
+
+```ruby
+Db::Snapshot.travel_to('20160612_2115')
+```
 
 ## Development
 
@@ -38,4 +63,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
