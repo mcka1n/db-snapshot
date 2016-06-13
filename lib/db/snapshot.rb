@@ -8,7 +8,12 @@ module Db
 
     def self.create(snapshot_name = '')
       date_time = Time.now.strftime("%Y%m%d_%H%M")
-      database_name = Mongoid.default_session.options[:database]
+      if snapshot_name.present?
+        database_name = snapshot_name
+      else
+        database_name = Mongoid.default_session.options[:database]
+      end
+
       system("mongodump --db #{database_name} -o dump/#{date_time}")
     end
 

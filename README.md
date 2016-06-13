@@ -34,12 +34,17 @@ Provides a list of the folders inside the dump/ folder.
 
 ### create
 
-Creates a snapshot of the existing database:
+Creates a snapshot of the existing database, it uses the following format for
+the snapshot name **yyyymmdd_hhmm**
 
 ```ruby
 # Optional, you can send your own name for this snapshot.
 Db::Snapshot.create()
 ```
+
+Result:
+
+    dump/20160612_2115/my_db_name
 
 ### travel_to
 
