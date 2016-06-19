@@ -17,6 +17,10 @@ module Db
       system("mongodump --db #{database_name} -o dump/#{date_time}")
     end
 
+    def self.destroy(snapshot_name = '')
+      system("rm -rf dump/#{snapshot_name}")
+    end
+
     def self.travel_to(specific_date_time = '')
       self.restore(specific_date_time)
     end
@@ -25,7 +29,7 @@ module Db
 
     def self.restore(specific_date_time = '')
       database_name = Mongoid.default_session.options[:database]
-      system("mongorestore --db #{database_name} dump/#{specific_date_time}/#{database_name}")
+      system("mongorestore --drop --db #{database_name} dump/#{specific_date_time}/#{database_name}")
     end
   end
 end
