@@ -24,9 +24,9 @@ Or install it yourself as:
 
 You have 3 useful methods with `Db::Snapshot`
 
-- `list`
-- `create`
-- `travel_to`
+- [`list`](https://github.com/mcka1n/db-snapshot#list)
+- [`create`](https://github.com/mcka1n/db-snapshot#create)
+- [`travel_to`](https://github.com/mcka1n/db-snapshot#travel_to)
 
 ### list
 
@@ -62,7 +62,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/db-snapshot. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mcka1n/db-snapshot. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
