@@ -1,8 +1,8 @@
 # Db::Snapshot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/db/snapshot`. To experiment with that code, run `bin/console` for an interactive prompt.
+`DB::Snapshot` let's you programatically switch your MongoDB database to previous stages. This is useful when you need have one server/computer that is running Demos or supporting some kind of reverse process to clean the database and let it in the default version.
 
-TODO: Delete this and the text above, and describe your gem
+Ruby code in the file `lib/db/snapshot`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
