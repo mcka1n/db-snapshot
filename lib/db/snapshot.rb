@@ -8,7 +8,7 @@ module Db
 
     def self.create(snapshot_name = '')
       date_time = Time.now.strftime("%Y%m%d_%H%M")
-      if snapshot_name.present?
+      if !snapshot_name.empty?
         database_name = snapshot_name
       else
         database_name = Mongoid.default_session.options[:database]
